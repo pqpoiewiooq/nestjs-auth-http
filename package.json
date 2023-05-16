@@ -1,6 +1,6 @@
 {
   "name": "nestjs-auth-http",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Promise based HTTP client for the Nest.js",
   "author": "pqpoiewiooq",
   "license": "MIT",
