@@ -1,0 +1,36 @@
+{
+  "name": "nestjs-auth-http",
+  "version": "0.0.4",
+  "description": "Promise based HTTP client for the Nest.js",
+  "author": "pqpoiewiooq",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc --build",
+    "format": "prettier --write \"lib/**/*.ts\" \"test/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "20.1.2",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^9.4.0",
+    "axios": "^1.4.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "keywords": [
+    "xhr",
+    "http",
+    "ajax",
+    "promise",
+    "node",
+    "nestjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pqpoiewiooq/nestjs-auth-http"
+  }
+}
