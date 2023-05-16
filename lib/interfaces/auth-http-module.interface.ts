@@ -6,7 +6,7 @@ export interface AuthHttpModuleOptions<D = any> extends CreateAuthHttpDefaults<D
     /**
      * Called after the {@link AuthHttpInstance} is created.
      */
-    onCreate<Credentials>(instance: AuthHttpInstance<Credentials>): void;
+    onCreate?<Credentials>(instance: AuthHttpInstance<Credentials>): void;
 }
 
 export interface AuthHttpModuleOptionsFactory<D = any> {

@@ -81,6 +81,29 @@ export class OAuthProvider extends AuthProvider<OAuthToken> {
 }
 ```
 
+##### auth/jwt-auth.provider.ts
+```ts
+import { Module } from '@nestjs/common';
+import { AuthHttpModule } from 'nestjs-auth-http';
+import { JwtAuthProvider } from './auth';
+import { FooController } from './controllers';
+
+
+@Module({
+    imports: [AuthHttpModule.register({
+        baseURL: 'http://token.api',
+        authProvider: new JwtAuthProvider(),
+        onCreate(instance) { // Called after the instance is created.
+            /* do something */
+            /* instance.interceptors.request.use() */
+        },
+    })],
+    controllers: [FooController],
+})
+export class AppModule {}
+
+```
+
 ##### controllers/foo-controller.ts
 ```ts
 import { Controller, Post } from '@nestjs/common';
